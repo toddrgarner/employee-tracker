@@ -19,7 +19,7 @@ app.use(express.static("public"))
 // Routes
 // ==============================================================
 
-// Basic route tha sends the user first toi the AJAX Page
+// Basic route tha sends the user first toi the AJAX of Fetch.
 // app.get("/", function(req, res) {
 //     res.sendFile(path.join(_dirname, "public/add.html"));    
 // });
