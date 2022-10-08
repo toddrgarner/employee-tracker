@@ -20,15 +20,13 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role.<br>
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database.<br>
 
-## Deployed Live URL:
+# Github Repository URL:
 
 https://toddrgarner.github.io/employee-tracker/
-## Github Repository URL:
-
 ## Employee Tracker Screenshoot
 
 
-## Employeer Tracker Demo
+## Employeer Tracker Walkthrough
 
 https://drive.google.com/file/d/1VfzR1_GGZJBG98A5XSADD0pooeYB3n4I/view
 
