@@ -27,6 +27,7 @@ https://toddrgarner.github.io/employee-tracker/
 
 ## Employee Tracker Screenshoot
 
+![Screen Shot 2022-10-08 at 3 19 03 AM](https://user-images.githubusercontent.com/110719370/194703292-26346e56-78ce-4962-aa82-301277d53972.png)
 
 ## Employeer Tracker Demo
 
