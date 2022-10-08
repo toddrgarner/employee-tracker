@@ -22,7 +22,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Employe Tracker Github Repository URL:
 
-https://toddrgarner.github.io/employee-tracker/
+https://github.com/toddrgarner/employee-tracker
 
 ## Employee Tracker Screenshoot
 
