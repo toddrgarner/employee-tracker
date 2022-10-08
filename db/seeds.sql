@@ -18,3 +18,4 @@ VALUES ("Otis", "Hayes", 2, NULL),
        ("Finny", "Taylor", 1, 1),
        ("Laura", "Nickels", 3, 2),
        ("Sofia", "Salazar", 5, 3);
+       

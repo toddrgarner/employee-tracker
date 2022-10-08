@@ -18,6 +18,56 @@ EMPLOYEE MANAGER
 `)
 );
 
+function userInterface(){
+    inquirer
+    .prompt(
+        {
+         name: "action",
+         type: 'list',
+         message: "What would you like to do?",
+         choices: [
+            'View All Employees',
+            'Add Employee',
+            'Update Employee Role',
+            'View All Roles',
+            'Add Role',
+            'View All Departments',
+            'Add Department',
+            "Quit"
+         ]
+        }
+    )
+    .then((response) => {
+        // call the respective function when the user has chosen
+        switch(response.action){
+            case "View All Employees":
+                displayEmployees();
+                break;
+            case "View All Roles":
+                displayRoles();
+                break;
+            case "View All Departments":
+                displayDepartments();
+                break;
+            case "Add Department":
+                addDepartment();
+                break;
+            case "Add Role":
+                addRole();
+                break;
+            case "Add Employee":
+                addEmployee();
+                break;
+            case "Update Employee Role":
+                updateEmployee();
+                break;
+            default:
+                console.log("Thanks for using the Employee Tracker!");
+                break;
+        }
+
+    })
+
 
 // Helper functions to read data from mySQL database
 
@@ -219,61 +269,15 @@ function addDepartment(){
         }
     })
 }
+}
 
+userInterface();
 
 
 // MAIN INQUIRER QUESTIONS
 // bonus things to do later: update managers, view employees by manager, view employees by department, view total utilized budget of department
-function userInterface(){
-    inquirer
-    .prompt(
-        {
-         name: "action",
-         type: 'list',
-         message: "What would you like to do?",
-         choices: [
-            'View All Employees',
-            'Add Employee',
-            'Update Employee Role',
-            'View All Roles',
-            'Add Role',
-            'View All Departments',
-            'Add Department',
-            "Quit"
-         ]
-        }
-    )
-    .then((response) => {
-        // call the respective function when the user has chosen
-        switch(response.action){
-            case "View All Employees":
-                displayEmployees();
-                break;
-            case "View All Roles":
-                displayRoles();
-                break;
-            case "View All Departments":
-                displayDepartments();
-                break;
-            case "Add Department":
-                addDepartment();
-                break;
-            case "Add Role":
-                addRole();
-                break;
-            case "Add Employee":
-                addEmployee();
-                break;
-            case "Update Employee Role":
-                updateEmployee();
-                break;
-            default:
-                console.log("Thanks for using the Employee Tracker!");
-                break;
-        }
+// move this function to the top
 
-    })
-}
 
 // initialize questions when starting up the server
 
